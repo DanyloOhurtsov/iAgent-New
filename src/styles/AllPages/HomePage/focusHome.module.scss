@@ -1,0 +1,31 @@
+@import "../../variables.module.scss";
+
+
+.focusHomeComp {
+    max-width: 1212px;
+    margin: 0 auto;
+    .titleFocusHome {
+        width: 100%;
+        background-color: $color_Blue_E5E;
+        padding: 16px 24px;
+        h2 {
+            color: $color_Black_232;
+            font-family: $fontFamily;
+            font-size: $size38;
+            font-weight: $weight700;
+        }
+    }
+    .contentFocusHome {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 24px;
+        margin-top: 24px;
+        .cardsFocusHome {
+            display: flex;
+            width: 100%;
+            gap: 24px;
+            justify-content: space-between;
+        }
+    }
+}

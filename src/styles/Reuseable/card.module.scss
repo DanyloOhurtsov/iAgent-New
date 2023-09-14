@@ -1,0 +1,94 @@
+@import "../variables.module.scss";
+
+.cardComp {
+    width: calc(50% - 12px);
+    flex-shrink: 0;
+    max-width: 388px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-decoration: none;
+    .imageCard {
+        width: 100%;
+        height: 224px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+        .numberRate {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 58px;
+            height: 58px;
+            background-color: black;
+            border-top-right-radius: 100%;
+            padding: 14px ;
+            p {
+                color: $color_White_FFF;
+                font-family: $fontFamily;
+                font-size: $size34;
+                font-weight: $weight700;
+            }
+        }
+    }
+    .textCard {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        .dateInfo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+                color: $color_Grey_8E9;
+                font-family: $fontFamily;
+                font-size: $size14;
+                font-weight: $weight400;
+                text-transform: lowercase;
+                span {
+                    margin-left: 8px;
+                }
+            }
+        }
+        .titleCard {
+            color: $color_Black_232;
+            font-family: $fontFamily;
+            font-size: $size22;
+            font-weight: $weight700;
+            text-transform: uppercase;
+        }
+        .descriptionCard {
+            color: $color_Black_232;
+            font-family: $fontFamily;
+            font-size: $size16;
+            font-weight: $weight400;
+            text-transform: lowercase;
+        }
+        .linksCard {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 16px;
+            button {
+                border: none;
+                background: none;
+                outline: none;
+                color: $color_Black_232;
+                font-size: $size22;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+        }
+    }
+}

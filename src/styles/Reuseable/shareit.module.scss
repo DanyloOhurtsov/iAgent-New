@@ -1,0 +1,47 @@
+@import "../variables.module.scss";
+
+.topRowShareit {
+    height: 248px;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    .shareCardShareit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+        height: 100%;
+        width: calc(100% / 3);
+        .titleInputsCard {
+            color: $color_Black_232;
+            text-align: center;
+            font-family: $fontFamily;
+            font-size: $size32;
+            font-weight: $weight700;
+        }
+        button {
+            border: none;
+            outline: none;
+            background: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 248px;
+            height: 50px;
+            background-color: $color_Black_000;
+            color: $color_White_FFF;
+            font-family: $fontFamily;
+            font-size: $size22;
+            font-weight: $weight700;
+            text-transform: uppercase;
+            border: 1px solid $color_Black_000;
+            cursor: pointer;
+            transition: 250ms;
+            &:hover {
+                background-color: transparent;
+                color: $color_Black_000;
+            }
+        }
+    }
+}

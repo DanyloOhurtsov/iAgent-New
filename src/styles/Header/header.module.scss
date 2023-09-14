@@ -1,0 +1,161 @@
+@import "../variables.module.scss";
+
+.headerComp {
+    .insideHeader {
+        max-width: calc(1212px + (16px * 2));
+        padding: 8px 16px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+
+        .logoHeader {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .navigationHeader {
+            width: 486px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            .buttonHeader {
+              text-decoration: none;
+                color: $color_Black_232;
+                font-family: $fontFamily;
+                font-size: $size16;
+                font-weight: $weight900;
+                cursor: pointer;
+            }
+        }
+
+        .optionsHeader {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+
+            .selectorLangHeader {
+                position: relative;
+                padding: 0 8px;
+
+                .topSelector {
+                    width: 100%;
+                    background: none;
+                    outline: none;
+                    border: none;
+                    display: flex;
+                    gap: 8px;
+                    color: #232020;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                }
+
+                .boxVariants {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    background-color: $color_Yellow_F4F;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    padding: 8px;
+
+                    .left {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        align-items: flex-start;
+                        width: 100%;
+
+                        button {
+                            background: none;
+                            border: none;
+                            outline: none;
+                            text-align: left;
+                            cursor: pointer;
+                            color: $color_Black_232;
+                            font-family: $fontFamily;
+                            font-size: $size16;
+                            font-weight: $weight900;
+                            width: 100%;
+                        }
+                    }
+
+                    .arrowButton {
+                        background: none;
+                        border: none;
+                        outline: none;
+                        width: 16px;
+                        height: 16px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .loginButtonHeader {
+                background: none;
+                outline: none;
+                border: none;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: $size16;
+                cursor: pointer;
+            }
+        }
+    }
+
+    hr {
+        border: none;
+        border-bottom: 1px solid $color_Black_0-21;
+    }
+
+    .bottomHeader {
+        max-width: calc(849px + (16px * 2));
+        padding: 41px 16px 21px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+
+        .buttonBottomHeader {
+            text-decoration: none;
+            color: $color_Black_232;
+            font-family: $fontFamily;
+            font-size: $size16;
+            font-weight: $weight400;
+            text-transform: uppercase;
+            cursor: pointer;
+            padding: 4px 8px;
+
+            &.collection,
+            &.design {
+                background-color: $color_Yellow_F4F;
+            }
+            &.news,
+            &.madeInSpain {
+                background-color: $color_Green_ECF;
+            }
+            &.club,
+            &.forum {
+                background-color: $color_Pink_FFD;
+            }
+            &.best,
+            &.blog {
+                background-color: $color_Blue_E5E;
+            }
+        }
+    }
+}

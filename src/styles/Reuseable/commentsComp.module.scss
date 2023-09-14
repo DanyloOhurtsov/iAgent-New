@@ -1,0 +1,120 @@
+@import "../variables.module.scss";
+
+.commentsComp {
+    max-width: 1212px;
+    margin: 80px auto 0;
+    .commentsList {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .commentItem {
+            display: flex;
+            gap: 24px;
+            width: 100%;
+            .commentDetails {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                width: 100%;
+                .comment {
+                    .commentAuthor {
+                        display: flex;
+                        gap: 8px;
+                        align-items: center;
+                        .authorPhoto {
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .authorInfo {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 4px;
+                            .authorName {
+                                color: $color_Black_000;
+                                font-family: $fontFamily;
+                                font-size: $size16;
+                                font-weight: $weight700;
+                            }
+                            .commentDate {
+                                color: $color_Grey_8E9;
+                                font-family: $fontFamily;
+                                font-size: $size14;
+                                font-weight: $weight400;
+                            }
+                        }
+                    }
+                    .commentText {
+                        margin-top: 16px;
+                        color: $color_Black_232;
+                        font-family: $fontFamily;
+                        font-size: $size16;
+                        font-weight: $weight400;
+                    }
+                    .commentOptions {
+                        margin-top: 16px;
+                        display: flex;
+                        justify-content: space-between;
+                        button {
+                            border: none;
+                            background: none;
+                            outline: none;
+                            cursor: pointer;
+                        }
+                        .buttonsSection {
+                            display: flex;
+                            gap: 16px;
+                            button {
+                                display: flex;
+                                gap: 8px;
+                                align-items: center;
+                                p {
+                                    color: $color_Grey_8E9;
+                                    font-family: $fontFamily;
+                                    font-size: $size14;
+                                    font-weight: $weight400;
+                                    width: fit-content;
+                                    min-width: 30px;
+                                    text-align: left;
+                                }
+                                p,
+                                i {
+                                    pointer-events: none;
+                                }
+                            }
+                        }
+                        .reportButton {
+                            color: $color_Black_232;
+                            font-family: $fontFamily;
+                            font-size: $size16;
+                            font-weight: $weight700;
+                        }
+                    }
+                    hr {
+                        margin-top: 16px;
+                    }
+                }
+                .noComments {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $color_Pink_FFD;
+                    color: #232020;
+                    font-family: $fontFamily;
+                    font-size: $size16;
+                    font-weight: $weight700;
+                }
+            }
+        }
+    }
+}

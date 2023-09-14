@@ -1,0 +1,12 @@
+@import "../variables.module.scss";
+
+.title2 {
+    width: 100%;
+    padding: 16px 24px;
+    h2 {
+        color: $color_Black_232;
+        font-family: $fontFamily;
+        font-size: $size38;
+        font-weight: $weight700;
+    }
+}

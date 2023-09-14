@@ -1,0 +1,19 @@
+@import "../../variables.module.scss";
+
+.bestHomeComp {
+    max-width: 1212px;
+    margin: 0 auto;
+    margin-top: 80px;
+    .subtitleBest {
+        color: $color_Black_232;
+        font-family: $fontFamily;
+        font-size: $size34;
+        font-weight: $weight700;
+        padding: 24px 0;
+    }
+    .contentBestHome {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+}

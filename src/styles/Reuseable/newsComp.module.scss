@@ -1,0 +1,228 @@
+@import "../variables.module.scss";
+
+.newsComp {
+    max-width: 1212px;
+    margin: 0 auto;
+    .titleNews {
+        width: 100%;
+        padding: 16px 24px;
+        h2 {
+            color: $color_Black_232;
+            font-family: $fontFamily;
+            font-size: $size38;
+            font-weight: $weight700;
+        }
+    }
+    .contentNews {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .searchNewsComp {
+            margin-top: 24px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+            .inputSearchSection {
+                width: calc((100% / 3) * 2);
+                display: flex;
+                .buttonSearchInput {
+                    border: none;
+                    background: none;
+                    outline: none;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $color_Black_000;
+                    color: $color_White_FFF;
+                    font-size: $size18;
+                    border: 1px solid transparent;
+                    transition: 250ms;
+                    &:hover {
+                        background-color: $color_White_FFF;
+                        color: $color_Black_000;
+                        border: 1px solid $color_Black_000;
+                    }
+                }
+                input {
+                    background: none;
+                    outline: none;
+                    border: none;
+                    border: 1px solid $color_Grey_DED;
+                    height: 50px;
+                    width: 100%;
+                    padding: 8px;
+                    color: $color_Black_232;
+                    font-family: $fontFamily;
+                    font-size: $size16;
+                    font-weight: $weight400;
+                    &::placeholder{
+                        color: $color_Black_0-21;
+                    }
+                }
+            }
+            .filtersButtonsSearch {
+                width: calc((100% / 3) - 12px);
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                .buttonFilterSearch {
+                    border: none;
+                    outline: none;
+                    background: none;
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                    cursor: pointer;
+                    img {
+                        pointer-events: none;
+                    }
+                    p {
+                        pointer-events: none;
+                        color: $color_Black_232;
+                        font-family: $fontFamily;
+                        font-size: $size18;
+                        font-weight: $weight700;
+                        text-transform: lowercase;
+                    }
+                }
+            }
+        }
+        .articlesContentNews {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            width: 100%;
+            margin-top: 24px;
+            .firstRowArticles,
+            .secondRowArticles {
+                display: flex;
+
+                justify-content: space-between;
+                gap: 24px;
+                .subsribeBlockNews {
+                    width: calc((100% / 3) - 12px);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $color_Green_ECF;
+                    padding: 64px;
+                    gap: 32px;
+                    .titleInputsCardNews {
+                        color: $color_Black_232;
+                        text-align: center;
+                        font-family: $fontFamily;
+                        font-size: $size32;
+                        font-weight: $weight700;
+                    }
+                    .inputSectionNews {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+                        width: 100%;
+                        .labelInputNews {
+                            color: $color_Black_232;
+                            font-family: $fontFamily;
+                            font-size: $size14;
+                            font-weight: $weight400;
+                            &.wrongEmailLabel {
+                                color: #ff0000;
+                            }
+                        }
+                        input {
+                            background: none;
+                            outline: none;
+                            border: none;
+                            width: 248px;
+                            height: 52px;
+                            background-color: $color_White_FFF;
+                            padding: 8px;
+                            color: $color_Black_000;
+                            font-family: $fontFamily;
+                            font-size: $size16;
+                            font-weight: $weight400;
+                            border: 1px solid transparent;
+                            &.wrongEmail {
+                                border: 1px solid #ff0000;
+                            }
+                        }
+                    }
+                    button {
+                        background: none;
+                        outline: none;
+                        border: none;
+                        background-color: $color_Black_000;
+                        width: 248px;
+                        height: 50px;
+                        color: $color_White_FFF;
+                        font-family: $fontFamily;
+                        font-size: $size22;
+                        font-weight: $weight700;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        border: 1px solid transparent;
+                        transition: 250ms;
+                        &:disabled {
+                            background-color: $color_Grey_979;
+                        }
+                        &:enabled {
+                            &:hover {
+                                color: $color_Black_232;
+                                background-color: $color_White_FFF;
+                                border: 1px solid $color_Black_000;
+                            }
+                        }
+                    }
+                }
+                .noResultsFound {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: calc((100% / 3) - 12px);
+                    background-color: $color_Pink_FFD;
+                    padding: 64px;
+
+                    p {
+                        color: $color_Black_232;
+                        text-align: center;
+                        font-family: $fontFamily;
+                        font-size: $size32;
+                        font-weight: $weight700;
+                    }
+                    button {
+                        background: none;
+                        outline: none;
+                        border: none;
+                        background-color: $color_Black_000;
+                        width: 248px;
+                        height: 50px;
+                        color: $color_White_FFF;
+                        font-family: $fontFamily;
+                        font-size: $size22;
+                        font-weight: $weight700;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        border: 1px solid transparent;
+                        transition: 250ms;
+                        &:hover {
+                            color: $color_Black_232;
+                            background-color: $color_White_FFF;
+                            border: 1px solid $color_Black_000;
+                        }
+                    }
+                }
+            }
+            .secondRowArticles {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

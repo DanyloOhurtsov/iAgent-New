@@ -1,0 +1,109 @@
+@import "../variables.module.scss";
+
+.footerComp {
+    background-color: $color_Black_232;
+    padding: 49px 16px 81px;
+    .insideFooter {
+        max-width: 1212px;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .leftContentFooter {
+            display: flex;
+            gap: 64px;
+            .itemFooter {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                .tiltleItemFooter {
+                    color: $color_Grey_8E9;
+                    font-family: $fontFamily;
+                    font-size: $size15;
+                    font-weight: $weight400;
+                    line-height: 29.203px;
+                    text-transform: uppercase;
+                }
+                .buttonsItem {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 16px;
+                    button,
+                    a,
+                    address {
+                        background: none;
+                        outline: none;
+                        border: none;
+                        text-decoration: none;
+                        font-style: normal;
+                        color: $color_White_FFF;
+                        font-family: $fontFamily;
+                        font-size: $size15;
+                        font-weight: $weight400;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .selectorLangFooter {
+            position: relative;
+            padding: 0 8px;
+            .topSelector {
+                width: 100%;
+                background: none;
+                outline: none;
+                border: none;
+                display: flex;
+                gap: 8px;
+                color: $color_White_FFF;
+                font-family: $fontFamily;
+                font-size: $size15;
+                font-weight: $weight600;
+                line-height: 29.203px;
+                text-transform: uppercase;
+            }
+            .boxVariants {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: $color_Yellow_F4F;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 8px;
+                .left {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    align-items: flex-start;
+                    width: 100%;
+                    button {
+                        background: none;
+                        border: none;
+                        outline: none;
+                        text-align: left;
+                        cursor: pointer;
+                        color: $color_Black_232;
+                        font-family: $fontFamily;
+                        font-size: $size16;
+                        font-weight: $weight900;
+                        width: 100%;
+                    }
+                }
+                .arrowButton {
+                    background: none;
+                    border: none;
+                    outline: none;
+                    width: 16px;
+                    height: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

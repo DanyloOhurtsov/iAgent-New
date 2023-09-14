@@ -1,0 +1,74 @@
+@import "../variables.module.scss";
+
+.bestOfComp {
+    max-width: 1212px;
+    margin: 0 auto;
+    margin-top: 80px;
+    .controlBestOf {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 24px;
+        .buttonsType {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            button {
+                width: 188px;
+                height: 50px;
+                border: none;
+                background: none;
+                outline: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $color_Black_232;
+                font-family: $fontFamily;
+                font-size: $size22;
+                font-weight: $weight700;
+                text-transform: uppercase;
+                border: 1px solid $color_Black_000;
+                transition: 250ms;
+                cursor: pointer;
+                &:hover {
+                    color: $color_White_FFF;
+                    background-color: $color_Black_000;
+                    border: 1px solid $color_Black_000;
+                }
+                &.active {
+                    background-color: $color_Black_000;
+                    color: $color_White_FFF;
+                }
+            }
+        }
+        .buttonCarousel{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            button{
+                background: none;
+                outline: none;
+                border: none;
+                width: 48px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid $color_Black_000;
+                color: $color_Black_000;
+                border-radius: 50%;
+                &:disabled{
+                    color: $color_Grey_8E9;
+                    border: 1px solid $color_Grey_8E9;
+                }
+            }
+        }
+    }
+    .articlesList{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 24px;
+    }
+}

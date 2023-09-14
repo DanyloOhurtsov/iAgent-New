@@ -1,0 +1,116 @@
+@import "../variables.module.scss";
+
+.videosComp {
+    display: flex;
+    gap: 24px;
+    max-width: 1212px;
+    margin: 0 auto;
+    margin-top: 80px;
+    .selectedVideo {
+        display: flex;
+        flex-direction: column;
+
+        gap: 8px;
+        width: calc((100% / 3) * 2);
+        flex-shrink: 0;
+        max-width: 800px;
+        .videoBlock {
+            width: 100%;
+            height: 450px;
+        }
+        .dateSection {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            p {
+                display: flex;
+                gap: 4px;
+                align-items: center;
+                color: $color_Grey_8E9;
+                font-family: $fontFamily;
+                font-size: $size14;
+                font-weight: $weight400;
+            }
+        }
+        .titleSelectedVideo {
+            color: $color_Black_232;
+            font-family: $fontFamily;
+            font-size: $size22;
+            font-weight: $weight700;
+        }
+        .descSelectedVideo {
+            color: $color_Black_232;
+            font-family: $fontFamily;
+            font-size: $size16;
+            font-weight: $weight400;
+        }
+    }
+    .paginationVideo {
+        width: calc(100% / 3);
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px;
+        .carouselOptions {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            .titleCarousel {
+                color: $color_Black_232;
+                font-family: $fontFamily;
+                font-size: $size32;
+                font-weight: $weight700;
+            }
+            button {
+                background: none;
+                outline: none;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        .listThubnailVideos {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-between;
+            .videoThumbnail {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: 100px;
+                gap: 4px;
+                .textThumbnail {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    height: 100%;
+                    width: 50%;
+                    .thumbnailTitle {
+                        color: $color_Black_232;
+                        font-family: $fontFamily;
+                        font-size: $size18;
+                        font-weight: $weight700;
+                    }
+                    .thumbnailDate {
+                        color: $color_Grey_8E9;
+                        font-family: $fontFamily;
+                        font-size: $size14;
+                        font-weight: $weight400;
+                    }
+                }
+                .imageThumbnail {
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

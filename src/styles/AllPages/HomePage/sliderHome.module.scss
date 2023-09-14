@@ -1,0 +1,76 @@
+@import "../../variables.module.scss";
+
+/* Slider.css */
+.sliderComp {
+    max-width: 1212px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 440px;
+    margin-top: 24px;
+    .slide {
+        width: 100%;
+        height: 100%;
+        display: none;
+        align-items: center;
+        .slideImage {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .slideText {
+            display: flex;
+            width: 50%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .insideText {
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                .titleSlide {
+                    color: $color_Black_232;
+                    font-family: $fontFamily;
+                    font-size: $size36;
+                    font-weight: $weight900;
+                    text-transform: uppercase;
+                }
+                .descSlide {
+                    color: $color_Black_232;
+                    font-family: $fontFamily;
+                    font-size: $size22;
+                    font-weight: $weight400;
+                }
+            }
+        }
+    }
+    .slide.active {
+        display: flex;
+    }
+    .nextButton {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        width: 25px;
+        height: 50px;
+        font-size: 38px;
+        background: none;
+        border: none;
+        outline: none;
+        opacity: 0.3;
+        cursor: pointer;
+        transition: 250ms;
+        right: 50px;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
